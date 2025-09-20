@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Document</title>
+</head>
+<body>
+     <header>
+            <h1>Armazém de Carros Novos</h1>
+            <h2>Vejha nosso estoque</h2>
+    </header>
+    <main>
+            <menu>
+                <a href="{{   url_for('index')  }}">PÁGINA INICIAL</a>
+            </menu>
+            <ul>
+                <li>Honda Civic 2025</li>
+                 <img src="{{ url_for('static', filename='Civic-jpg.webp') }} "width= "350px" height="250px">
+                <li>Volkswagen Tiguan 2025</li>
+                 <img src="{{ url_for('static', filename='tiguan.webp') }} "width= "350px" height="250px">
+                <li>Nissan Kicks 2025</li>
+                 <img src="{{ url_for('static', filename='Nissan.webp') }} "width= "350px" height="250px">
+            </ul>
+    </main>
+    <footer>
+            <h2>Desenvolvido por Noemi Borges</h2>
+             <img src="{{ url_for('static', filename='logo.png') }} "width= "50px" height="50px">
+    </footer>
+</body>
+</html>

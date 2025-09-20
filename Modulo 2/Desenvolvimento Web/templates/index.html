@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Aula Flask</title>
+</head>
+
+<body>
+    
+    <header>
+            <h1>Armazém de Carros Novos</h1>
+    </header>
+    <main>
+        <menu>
+            <a href="{{   url_for('estoque')  }}">VEJA NOSSO ESTOQUE</a>
+        </menu>
+            inserir texto e imagens aqui...
+    </main>
+    <footer>
+            <h2>Desenvolvido por Noemi Borges</h2><br>
+            <img src="{{ url_for('static', filename='logo.png') }} "width= "50px" height="50px">
+
+</body>
+
+</html>
